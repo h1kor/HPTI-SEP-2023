@@ -12,10 +12,14 @@ this tool really amazing to helping pentesting with urls.
 
 $ go install github.com/lc/gau/v2/cmd/gau@latest
 
-#Examples:
+Examples:
 
 $ printf example.com | gau
+
 $ cat domains.txt | gau --threads 5
+
 $ gau example.com google.com
+
 $ gau --o example-urls.txt example.com
+
 $ gau --blacklist png,jpg,gif example.com
